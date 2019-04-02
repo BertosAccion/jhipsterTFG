@@ -1,6 +1,6 @@
 {
     "global": {
-        "title": "TFG_Test1",
+        "title": "Social GO",
         "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
         "menu": {
             "home": "Home",
@@ -48,9 +48,8 @@
         "messages": {
             "info": {
                 "authenticated": {
-                    "prefix": "If you want to ",
-                    "link": "sign in",
-                    "suffix": ", you can try the default accounts:<br/>- Administrator (login=\"admin\" and password=\"admin\") <br/>- User (login=\"user\" and password=\"user\")."
+                    "prefix": "If you already have an account, ",
+                    "link": "sign in"
                 },
                 "register": {
                     "noaccount": "You don't have an account yet?",

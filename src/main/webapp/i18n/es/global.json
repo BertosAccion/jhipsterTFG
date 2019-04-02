@@ -1,6 +1,6 @@
 {
     "global": {
-        "title": "TFG_Test1",
+        "title": "Social GO",
         "browsehappy": "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=en\">actualice su navegador</a> para mejorar su experiencia.",
         "menu": {
             "home": "Inicio",
@@ -48,13 +48,12 @@
         "messages": {
             "info": {
                 "authenticated": {
-                    "prefix": "Si desea ",
-                    "link": "iniciar una sesión",
-                    "suffix": ", puede intentar con las cuentas predeterminadas:<br/>- Administrator (usuario=\"admin\" y contraseña=\"admin\") <br/>- Usuario (usuario=\"user\" y contraseña=\"user\")."
+                    "prefix": "Si ya tienes una cuenta, ",
+                    "link": "inicia sesión"
                 },
                 "register": {
                     "noaccount": "¿No tienes una cuenta todavía?",
-                    "link": "Crea una cuenta"
+                    "link": "Regístrate"
                 }
             },
             "error": {
