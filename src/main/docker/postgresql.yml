@@ -1,0 +1,11 @@
+version: '2'
+services:
+    tfg_test1-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/TFG_Test1/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=TFG_Test1
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432

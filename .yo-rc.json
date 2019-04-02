@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.jhipster.tfg",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "monolith",
+    "baseName": "TFG_Test1",
+    "packageName": "com.jhipster.tfg",
+    "packageFolder": "com/jhipster/tfg",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MDUyOTM0ZGVmOWFiZDJiZWE1OTRlY2NhYjFhMWY0M2M2ZDEyMzQ5ODY3OTA2OTJiOGZmYmRlOGMyYWVjYWEwY2Q5YjI5Y2E0NjUyZjhlZDVmYjgwNjlkNjA5ZWQ5MzcwNjYyNGU1YTgyZGQxODQwZjdlZTNmYzg5MDg1YWUxYWY=",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "es",
+    "languages": [
+      "es",
+      "en"
+    ]
+  }
+}
