@@ -14,6 +14,7 @@
         "detail": {
             "title": "User"
         },
+        "profilepic": "Profile pic",
         "login": "Login",
         "firstName": "First name",
         "lastName": "Last name",
