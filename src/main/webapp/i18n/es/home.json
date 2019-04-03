@@ -1,6 +1,7 @@
 {
     "home": {
         "title": "¡Bienvenido a Social GO!",
+        "placeholder": "¿Qué pokémon has encontrado hoy?",
         "logged": {
             "message": "Está conectado como \"{{username}}\"."
         }

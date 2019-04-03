@@ -1,0 +1,24 @@
+{
+    "tfgTest1App": {
+        "tuit": {
+            "home": {
+                "title": "Tuits",
+                "createLabel": "Crear nuevo Tuit",
+                "homeTuit": "Enviar",
+                "createOrEditLabel": "Crear o editar Tuit"
+            },
+            "created": "Un nuevo Tuit ha sido creado con el identificador {{ param }}",
+            "updated": "Un Tuit ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Tuit ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Tuit {{ id }}?"
+            },
+            "detail": {
+                "title": "Tuit"
+            },
+            "userEmisor": "User Emisor",
+            "userReceptor": "User Receptor",
+            "textoTuit": "Texto Tuit"
+        }
+    }
+}

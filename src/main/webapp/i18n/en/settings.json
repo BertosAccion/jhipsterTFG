@@ -1,7 +1,8 @@
 {
     "settings": {
-        "title": "User settings for [<b>{{username}}</b>]",
+        "title": "User settings: <b>@{{username}}</b>",
         "form": {
+            "username": "Username",
             "firstname": "First Name",
             "firstname.placeholder": "Your first name",
             "lastname": "Last Name",
