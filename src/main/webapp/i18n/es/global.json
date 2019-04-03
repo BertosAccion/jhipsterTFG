@@ -4,6 +4,8 @@
         "browsehappy": "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=en\">actualice su navegador</a> para mejorar su experiencia.",
         "menu": {
             "home": "Inicio",
+            "notifications": "Notificaciones",
+            "messages": "Mensajes",
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entidades",
@@ -48,7 +50,7 @@
         "messages": {
             "info": {
                 "authenticated": {
-                    "prefix": "Si ya tienes una cuenta, ",
+                    "prefix": "Si ya tienes una cuenta,",
                     "link": "inicia sesión"
                 },
                 "register": {
