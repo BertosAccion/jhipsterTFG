@@ -10,6 +10,7 @@ import { TfgTest1TuitModule } from './tuit/tuit.module';
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],
+    exports: [TfgTest1TuitModule],
     entryComponents: [],
     providers: [],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]

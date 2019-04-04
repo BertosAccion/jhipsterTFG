@@ -10,7 +10,7 @@
         </div>
         <div [ngSwitch]="isAuthenticated()">
             <div *ngSwitchCase="true">
-                <div class="row" *ngSwitchCase="true">
+                <div class="row">
                     <form class="col-md-9">
                         <input type="text" class="form-control" name="textoTuit" id="field_textoTuit" required
                             maxlength="240" placeholder="{{'home.placeholder' | translate}}" />
@@ -21,6 +21,11 @@
                             </span>
                         </button>
                     </form>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <jhi-tuit></jhi-tuit>
+                    </div>
                 </div>
             </div>
             <div class="alert alert-warning" *ngSwitchCase="false">

@@ -16,6 +16,7 @@ const ENTITY_STATES = [...tuitRoute, ...tuitPopupRoute];
 
 @NgModule({
     imports: [TfgTest1SharedModule, RouterModule.forChild(ENTITY_STATES)],
+    exports: [TuitComponent],
     declarations: [TuitComponent, TuitDetailComponent, TuitUpdateComponent, TuitDeleteDialogComponent, TuitDeletePopupComponent],
     entryComponents: [TuitComponent, TuitUpdateComponent, TuitDeleteDialogComponent, TuitDeletePopupComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
