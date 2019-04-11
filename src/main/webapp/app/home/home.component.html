@@ -1,9 +1,9 @@
 <div [ngSwitch]="isAuthenticated()">
-    <div class="row" *ngSwitchCase="false">
-        <div class="col-md-6">
+    <div class="row mainHome" *ngSwitchCase="false">
+        <div class="col-md-6 mitad1">
             <span class="hipster img-fluid rounded" *ngSwitchCase="false"></span>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mitad2">
             <h1 class="display-4" jhiTranslate="home.title" *ngSwitchCase="false">Welcome to Social GO!</h1>
             <div class="alert alert-warning">
                 <span jhiTranslate="global.messages.info.authenticated.prefix">If you want to</span>
@@ -18,8 +18,8 @@
             </div>
         </div>
     </div>
-    <div class="row" *ngSwitchCase="false">
-            <div class="col-md-6">
+    <div class="row" *ngSwitchCase="true">
+            <div class="col-md-3">
                 <span class="hipster img-fluid rounded" *ngSwitchCase="false"></span>
             </div>
             <div class="col-md-6">
