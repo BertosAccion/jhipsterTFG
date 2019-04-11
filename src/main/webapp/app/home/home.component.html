@@ -1,43 +1,40 @@
-<div class="row">
-    <div class="col-md-3" [ngSwitch]="isAuthenticated()">
-        <div [ngSwitch]="isAuthenticated()">
+<div [ngSwitch]="isAuthenticated()">
+    <div class="row" *ngSwitchCase="false">
+        <div class="col-md-6">
             <span class="hipster img-fluid rounded" *ngSwitchCase="false"></span>
         </div>
-    </div>
-    <div class="col-md-8">
-        <div [ngSwitch]="isAuthenticated()">
+        <div class="col-md-6">
             <h1 class="display-4" jhiTranslate="home.title" *ngSwitchCase="false">Welcome to Social GO!</h1>
-        </div>
-        <div [ngSwitch]="isAuthenticated()">
-            <div *ngSwitchCase="true">
-                <div class="row">
-                    <form class="col-md-9">
-                        <input type="text" class="form-control" name="textoTuit" id="field_textoTuit" required
-                            maxlength="240" placeholder="{{'home.placeholder' | translate}}" />
-                        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-tuit"
-                            [routerLink]="['/tuit/new']" style='width:90px'>
-                            <span jhiTranslate="tfgTest1App.tuit.home.homeTuit">
-                                Create new Tuit
-                            </span>
-                        </button>
-                    </form>
-                </div>
-                <div class="row">
-                    <div class="col-md-9">
-                        <jhi-tuit></jhi-tuit>
-                    </div>
-                </div>
-            </div>
-            <div class="alert alert-warning" *ngSwitchCase="false">
+            <div class="alert alert-warning">
                 <span jhiTranslate="global.messages.info.authenticated.prefix">If you want to</span>
                 <a class="alert-link" (click)="login()" jhiTranslate="global.messages.info.authenticated.link">sign
                     in</a>
             </div>
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>&nbsp;
+            <div class="alert alert-warning">
+                <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account
+                    yet?</span>&nbsp;
                 <a class="alert-link" routerLink="register" jhiTranslate="global.messages.info.register.link">Register a
                     new account</a>
             </div>
         </div>
     </div>
+    <div class="row" *ngSwitchCase="false">
+            <div class="col-md-6">
+                <span class="hipster img-fluid rounded" *ngSwitchCase="false"></span>
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-4" jhiTranslate="home.title" *ngSwitchCase="false">Welcome to Social GO!</h1>
+                <div class="alert alert-warning">
+                    <span jhiTranslate="global.messages.info.authenticated.prefix">If you want to</span>
+                    <a class="alert-link" (click)="login()" jhiTranslate="global.messages.info.authenticated.link">sign
+                        in</a>
+                </div>
+                <div class="alert alert-warning">
+                    <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account
+                        yet?</span>&nbsp;
+                    <a class="alert-link" routerLink="register" jhiTranslate="global.messages.info.register.link">Register a
+                        new account</a>
+                </div>
+            </div>
+        </div>
 </div>

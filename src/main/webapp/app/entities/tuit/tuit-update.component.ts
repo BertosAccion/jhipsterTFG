@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpResponse, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Principal } from 'app/core';
 
 import { ITuit } from 'app/shared/model/tuit.model';
 import { TuitService } from './tuit.service';
@@ -12,14 +13,18 @@ import { TuitService } from './tuit.service';
 })
 export class TuitUpdateComponent implements OnInit {
     tuit: ITuit;
+    account: Account;
     isSaving: boolean;
 
-    constructor(private tuitService: TuitService, private activatedRoute: ActivatedRoute) {}
+    constructor(private principal: Principal, private tuitService: TuitService, private activatedRoute: ActivatedRoute) {}
 
     ngOnInit() {
         this.isSaving = false;
         this.activatedRoute.data.subscribe(({ tuit }) => {
             this.tuit = tuit;
+        });
+        this.principal.identity().then(account => {
+            this.account = account;
         });
     }
 

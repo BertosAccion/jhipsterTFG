@@ -7,11 +7,11 @@
                 "homeTuit": "Enviar",
                 "createOrEditLabel": "Crear o editar Tuit"
             },
-            "created": "Un nuevo Tuit ha sido creado con el identificador {{ param }}",
+            "created": "Tuit enviado",
             "updated": "Un Tuit ha sido actualizado con el identificador {{ param }}",
-            "deleted": "Un Tuit ha sido eliminado con el identificador {{ param }}",
+            "deleted": "El tuit ha sido eliminado",
             "delete": {
-                "question": "¿Seguro que quiere eliminar Tuit {{ id }}?"
+                "question": "¿Seguro que quiere eliminar este tuit?"
             },
             "detail": {
                 "title": "Tuit"

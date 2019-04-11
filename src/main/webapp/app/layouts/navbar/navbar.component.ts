@@ -20,6 +20,7 @@ export class NavbarComponent implements OnInit {
     swaggerEnabled: boolean;
     modalRef: NgbModalRef;
     version: string;
+    account: Account;
 
     constructor(
         private loginService: LoginService,
@@ -43,6 +44,10 @@ export class NavbarComponent implements OnInit {
         this.profileService.getProfileInfo().then(profileInfo => {
             this.inProduction = profileInfo.inProduction;
             this.swaggerEnabled = profileInfo.swaggerEnabled;
+        });
+
+        this.principal.identity().then(account => {
+            this.account = account;
         });
     }
 

@@ -6,7 +6,8 @@
     </div>
     <div class="modal-body">
         <jhi-alert-error></jhi-alert-error>
-        <p id="jhi-delete-tuit-heading" jhiTranslate="tfgTest1App.tuit.delete.question" translateValues="{id: '{{tuit.id}}'}">Are you sure you want to delete this Tuit?</p>
+        <p id="jhi-delete-tuit-heading" jhiTranslate="tfgTest1App.tuit.delete.question">Are you sure you want to delete this Tuit?</p>
+        <p>{{tuit.textoTuit}}</p>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
